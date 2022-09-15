@@ -165,8 +165,8 @@ img {
 }
 
 .hero-item {
-  max-width: 1600px;
-  width: 100%;
+  width: 1600px;
+
   height: 600px;
   display: inline-block;
   text-align: center;
@@ -174,8 +174,8 @@ img {
 
 .title-item {
   display: block;
-  max-width: 696px;
-  width: 100%;
+  width: 696px;
+
   height: 120px;
   margin: auto;
   margin-top: 180px;
@@ -252,8 +252,8 @@ img {
 .image-item {
   display: inline-block;
   align-items: center;
-  max-width: 370px;
-  width: 100%;
+  width: 370px;
+
   height: 294px;
   padding-right: 30px;
   padding-top: 50px;
@@ -262,8 +262,8 @@ img {
 .image-icon {
   display: inline-block;
   align-items: center;
-  max-width: 370px;
-  width: 100%;
+  width: 370px;
+
   height: 294px;
   padding-left: 30px;
   padding-top: 50px;
@@ -272,8 +272,8 @@ img {
 /*team*/
 .team {
   display: inline-block;
-  max-width: 1600px;
-  width: 100%;
+  width: 1600px;
+
   height: 648px;
   text-align: center;
 }
@@ -285,8 +285,7 @@ img {
 
 .section-team {
   display: inline-block;
-  max-width: 1170px;
-  width: 100%;
+  width: 1170px;
   height: 368px;
   padding-top: 50px;
   border-radius: 0px;
@@ -294,16 +293,14 @@ img {
 
 .team-image {
   display: inline-block;
-  max-width: 270px;
-  width: 100%;
+  width: 270px;
   height: 260px;
   padding-right: 30px;
 }
 
 .team-images {
   display: inline-block;
-  max-width: 270px;
-  width: 100%;
+  width: 270px;
   height: 260px;
   padding-left: 30px;
 }
@@ -422,7 +419,7 @@ img {
 
 .image {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   max-width: 370px;
   width: 100%;
   height: 294px;
