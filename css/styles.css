@@ -17,9 +17,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -38,6 +42,16 @@ p {
   font-style: normal;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -51,8 +65,60 @@ p {
   overflow: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-item {
+  margin-right: 50px;
+  align-items: center;
+}
+
+.head-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
+
+.contact-item {
+  margin-right: 50px;
+}
+
 /*header*/
 .logo-link {
+  margin-right: 93px;
   font-family: var(--secondary-ff);
   font-weight: 700;
   font-size: 26px;
@@ -72,6 +138,7 @@ p {
   letter-spacing: 0.02em;
   color: inherit;
 }
+
 .contact-link {
   color: var(--title-list-text-color);
   font-weight: 500;
@@ -96,6 +163,24 @@ p {
 .hero {
   background-color: var(--footer-bg-color);
 }
+
+.hero-item {
+  max-width: 1600px;
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+  text-align: center;
+}
+
+.title-item {
+  display: block;
+  max-width: 696px;
+  width: 100%;
+  height: 120px;
+  margin: auto;
+  margin-top: 180px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -106,9 +191,18 @@ p {
   color: var(--primary-bg-color);
 }
 
+
+.btn {
+  display: inline-block;
+  min-width: 152px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .hero-button {
   background-color: var(--accent-text-color);
-  border-radius: 4px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -134,22 +228,111 @@ p {
   color: var(--title-list-text-color);
 }
 
-/*title*/
 
-.feature-text {
-  line-height: 1.71;
-  color: var(--title-list-text-color);
+.feature-item {
+  display: flex;
+  padding-top: 74px;
+  padding-bottom: 94px;
 }
+
+
 
 /*section*/
 
 .section-title {
   font-size: 36px;
   line-height: calc(42 / 36);
+
   text-align: center;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+}
+
+.image-item {
+  display: inline-block;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  height: 294px;
+  padding-right: 30px;
+  padding-top: 50px;
+}
+
+.image-icon {
+  display: inline-block;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  height: 294px;
+  padding-left: 30px;
+  padding-top: 50px;
 }
 
 /*team*/
+.team {
+  display: inline-block;
+  max-width: 1600px;
+  width: 100%;
+  height: 648px;
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+  padding-top: 94px;
+}
+
+.section-team {
+  display: inline-block;
+  max-width: 1170px;
+  width: 100%;
+  height: 368px;
+  padding-top: 50px;
+  border-radius: 0px;
+}
+
+.team-image {
+  display: inline-block;
+  max-width: 270px;
+  width: 100%;
+  height: 260px;
+  padding-right: 30px;
+}
+
+.team-images {
+  display: inline-block;
+  max-width: 270px;
+  width: 100%;
+  height: 260px;
+  padding-left: 30px;
+}
+
+
+.team-item {
+  display: inline-block;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.team-icon {
+  display: inline-block;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.name-item {
+  display: inline-block;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.position-icon {
+  display: inline-block;
+  padding-top: 10px;
+  text-align: center;
+}
+
 .team-name {
   font-size: 16px;
   font-weight: 500;
@@ -173,6 +356,7 @@ p {
 .logo-footer {
   color: var(--primary-bg-color);
 }
+
 .footer .logo {
   color: var(--primary-bg-color);
   line-height: calc(31 / 26);
@@ -234,4 +418,12 @@ p {
 .project-text {
   font-size: 16px;
   color: var(--title-list-text-color);
+}
+
+.image {
+  display: flex;
+  flex-wrap:wrap;
+  max-width: 370px;
+  width: 100%;
+  height: 294px;
 }
