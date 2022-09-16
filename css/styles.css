@@ -391,10 +391,11 @@ html {
   background-color: var(--accent-text-color);
   border: none;
 }
-.work .container {
-  padding: 94px 15px;
-}
+
 /* work */
+.work {
+padding-bottom: 94px;
+}
 .work-nav {
   display: flex;
   justify-content: center;
@@ -415,10 +416,20 @@ html {
 }
 
 /* portfolio */
-
+.item {
+    border: 1px solid #EEEEEE;
+}
+.work .container{
+  padding: 0;
+} 
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+  
+
+}
+.portfolio-box{
+ padding: 20px;
 }
 /*project*/
 
